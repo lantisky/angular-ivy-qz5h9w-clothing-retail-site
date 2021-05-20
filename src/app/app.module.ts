@@ -8,6 +8,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,13 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ItemComponent,
     TopBarComponent
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatCardModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
