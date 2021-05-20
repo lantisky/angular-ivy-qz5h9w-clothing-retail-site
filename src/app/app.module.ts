@@ -9,24 +9,28 @@ import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    HomePageComponent,
-    ItemComponent,
-    TopBarComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    MatCardModule,
-    MatButtonModule,
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HelloComponent,
+        HomePageComponent,
+        ItemComponent,
+        TopBarComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        MatCardModule,
+        MatButtonModule,
+        NgbPaginationModule,
+        NgbAlertModule,
+    ],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

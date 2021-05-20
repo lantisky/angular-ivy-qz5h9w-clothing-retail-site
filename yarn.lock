@@ -1153,6 +1153,13 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@ng-bootstrap/ng-bootstrap@^9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-9.1.1.tgz#5a629915ea93b4f9b4d61854cb6862d99a7c9ca4"
+  integrity sha512-m31qKJylYueXm+a3YEoOfnrJYR1lovb7WgaQwvXQz3dDmtaYRX4n8aPeCMp1VrI7hFfFITKWo0GxPaI3JIFk4w==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@12.0.1":
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-12.0.1.tgz#6f8286556053b78355cd3f52d05da395978793ab"
