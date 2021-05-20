@@ -9,6 +9,7 @@ import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatButtonModule,
   ],
   bootstrap: [AppComponent]
 })
