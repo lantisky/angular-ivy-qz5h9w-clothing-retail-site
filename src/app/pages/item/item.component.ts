@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  contentLoaded = false;
   constructor() {}
-
-  ngOnInit() {
-    setTimeout(() => {
-      this.contentLoaded = true;
-    }, 4000);
-  }
+  ngOnInit() {}
 }
