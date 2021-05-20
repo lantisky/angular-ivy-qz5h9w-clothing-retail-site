@@ -1,6 +1,8 @@
 # angular-ivy-qz5h9w
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-qz5h9w)
+[View on StackBlitz ⚡️](https://angular-ivy-qz5h9w.stackblitz.io)
+
 
 # Intro
 Sample project for clothing retailing site;
