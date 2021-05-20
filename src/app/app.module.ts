@@ -16,14 +16,14 @@ import { MatCardModule } from '@angular/material/card';
     HelloComponent,
     HomePageComponent,
     ItemComponent,
-    TopBarComponent
+    TopBarComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
   ],
   bootstrap: [AppComponent]
 })
