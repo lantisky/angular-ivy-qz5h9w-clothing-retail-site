@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ItemComponent } from './pages/item/item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     HomePageComponent,
-    ItemComponent
+    ItemComponent,
+    TopBarComponent
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

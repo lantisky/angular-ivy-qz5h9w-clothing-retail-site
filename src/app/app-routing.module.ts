@@ -22,3 +22,14 @@ const appRoutes: Routes = [
     redirectTo: 'home'
   }
 ];
+@NgModule({
+  declarations: [],
+  imports: [
+    RouterModule.forRoot(appRoutes, {
+      useHash: true,
+      relativeLinkResolution: 'legacy'
+    })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
