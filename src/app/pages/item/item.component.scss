@@ -11,3 +11,19 @@ p {
 .product-header {
   background-color: #f6f6f7;
 }
+.item-photo {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  width: 1600px;
+  height: 1600px;
+  border: none;
+  max-width: none;
+  max-height: none;
+}
+.item-info {
+  padding: 30px 40px;
+  float: right;
+}
