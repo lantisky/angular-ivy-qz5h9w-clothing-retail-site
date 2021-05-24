@@ -25,6 +25,16 @@
 
 <div class="wrapper">
   <div class="item-photo">
+    <!-- <ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex">
+      <span *ngIf="type === 'imageZoom' && index === currIndex" [@slideAnimation] class="item-text">
+
+    <ngx-image-zoom [thumbImage]="data.thumb" 
+                    [fullImage]="data.src"
+                    [magnification]="3"
+                    [enableLens]="true"
+                    ></ngx-image-zoom>
+  </span>
+    </ng-template> -->
     <img src="https://cdn11.bigcommerce.com/s-nw7gte6txe/images/stencil/2000w/products/481/3269/5001G_STAPLE_ORGANIC_TEE_WHITE__66663.1586238235.jpg?c=1" alt="item-photo">
   </div>
 
