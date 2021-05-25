@@ -1,25 +1,25 @@
 .h2,
 h3,
-p {
+p,
+div {
   color: #888888;
 }
-// .container {
-//   border-color: #cccccc;
-//   border-radius: 30px;
-//   width: 400px;
-// }
+.container {
+  border-color: #cccccc;
+  border-radius: 30px;
+  display: flexbox;
+}
 .product-header {
   background-color: #f6f6f7;
 }
 .item-photo {
-  position: absolute;
-  left: 0px;
-  padding-left: 50px;
+  padding-top: none;
+  padding-left: 20%;
   border: none;
   max-width: none;
   max-height: none;
 }
 .item-info {
   padding: 30px 40px;
-  display: flex;
+  padding-right: 25%;
 }
