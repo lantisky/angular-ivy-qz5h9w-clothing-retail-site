@@ -14,12 +14,12 @@ p {
 .item-photo {
   position: absolute;
   left: 0px;
-  width: 50%;
-  height: 50%;
+  padding-left: 50px;
   border: none;
   max-width: none;
   max-height: none;
 }
 .item-info {
   padding: 30px 40px;
+  display: flex;
 }
