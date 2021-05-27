@@ -1,41 +1,7 @@
-<!-- <div class="container">
-  <mat-card fxLayout="column">
-    <div class="product-img">
-      <img src="./assets/classic-tee.jpg" alt="">
-    </div>
-    <mat-card-header class="product-header">
-      <h3>Classic Tee</h3>
-    </mat-card-header>
-    <hr>
-    <div class="product-price">
-      <h4>$75.00</h4>
-    </div>
-    <mat-card-content class="product-info">
-      <span class="category">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</span>
-    </mat-card-content>
-    <hr>
-    <mat-card-actions>
-      <button mat-button>S</button>
-      <button mat-button>M</button>
-      <button mat-button>L</button>
-      <button mat-button>ADD TO CARD</button>
-    </mat-card-actions>
-  </mat-card>
-</div> -->
-<!-- <ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex">
-      <span *ngIf="type === 'imageZoom' && index === currIndex" [@slideAnimation] class="item-text">
-
-    <ngx-image-zoom [thumbImage]="data.thumb" 
-                    [fullImage]="data.src"
-                    [magnification]="3"
-                    [enableLens]="true"
-                    ></ngx-image-zoom>
-  </span>
-    </ng-template> -->
-
 <div class="container justify-content-center flex-row d-flex h-full w-full">
 
   <div class="item-photo justify-content-between position-relative align-items-start">
+
     <img src="https://cdn11.bigcommerce.com/s-nw7gte6txe/images/stencil/2000w/products/481/3269/5001G_STAPLE_ORGANIC_TEE_WHITE__66663.1586238235.jpg?c=1" alt="item-photo" style="width:500px; ">
   </div>
 
@@ -62,8 +28,16 @@
       </ul>
     </div>
 
-    <div class="item-size">
-
+    <div class="item-size text-start">
+      <ul>
+        <p>Size</p>
+      </ul>
+      <mat-button-toggle-group [(ngModel)]="itemSize" aria-label="Item Size">
+        <mat-button-toggle value="small">S</mat-button-toggle>
+        <mat-button-toggle value="middle">M</mat-button-toggle>
+        <mat-button-toggle value="large">L</mat-button-toggle>
+      </mat-button-toggle-group>
+      <p>Your chosen Size is {{itemSize}}</p>
     </div>
 
     <div class="item-add-to-card">
