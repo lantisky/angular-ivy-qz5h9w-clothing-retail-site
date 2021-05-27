@@ -8,6 +8,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { CheckOutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 // import { MaterialModule } from './material-module';
 import { MatCardModule } from '@angular/material/card';
@@ -16,13 +18,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     HomePageComponent,
     ItemComponent,
-    TopBarComponent
+    TopBarComponent,
+    CheckOutPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
