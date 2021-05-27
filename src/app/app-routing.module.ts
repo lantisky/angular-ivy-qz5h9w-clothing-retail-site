@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     path: 'item',
     component: ItemComponent
   },
-   {
+  {
     path: 'about',
     component: AboutPageComponent
   },
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   {
     path: '**',
     redirectTo: 'home'
-  },
+  }
 ];
 @NgModule({
   declarations: [],
