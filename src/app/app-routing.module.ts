@@ -19,18 +19,18 @@ const appRoutes: Routes = [
     path: 'item',
     component: ItemComponent
   },
-  {
-    path: '**',
-    redirectTo: 'home'
-  },
-  {
+   {
     path: 'about',
     component: AboutPageComponent
   },
   {
     path: 'checkout',
     component: CheckOutPageComponent
-  }
+  },
+  {
+    path: '**',
+    redirectTo: 'home'
+  },
 ];
 @NgModule({
   declarations: [],
