@@ -18,7 +18,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
-
 @NgModule({
   declarations: [
     AppComponent,
