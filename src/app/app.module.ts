@@ -17,8 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
-// import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
-// import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     TopBarComponent,
     CheckOutPageComponent,
     AboutPageComponent,
-    // ImageGalleryComponent
+    ImageGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +40,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatButtonModule,
     MatGridListModule,
     MatButtonToggleModule,
-    // NgxGalleryModule
+    NgxGalleryModule
   ],
   bootstrap: [AppComponent]
 })
