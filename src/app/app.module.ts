@@ -19,29 +19,39 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { ShoppingCartModule } from 'ng-shopping-cart';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    HomePageComponent,
-    ItemComponent,
-    TopBarComponent,
-    CheckOutPageComponent,
-    AboutPageComponent,
-    ImageGalleryComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatGridListModule,
-    MatButtonToggleModule,
-    NgxGalleryModule
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HelloComponent,
+        HomePageComponent,
+        ItemComponent,
+        TopBarComponent,
+        CheckOutPageComponent,
+        AboutPageComponent,
+        ImageGalleryComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        MatCardModule,
+        MatButtonModule,
+        MatGridListModule,
+        MatButtonToggleModule,
+        NgxGalleryModule,
+        ShoppingCartModule.forRoot({ // <-- Add the cart module to your root module
+            // itemType: MyCartItemClass, // <-- Configuration is optional
+            serviceType: 'localStorage',
+            serviceOptions: {
+                storageKey: 'NgShoppingCart',
+                clearOnError: true
+            }
+        }),
+    ],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
