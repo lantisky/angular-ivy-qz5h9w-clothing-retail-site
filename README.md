@@ -55,4 +55,5 @@ Mobile: https://invis.io/ASAP5RSBD
 
 reference note : 
 https://xmoyking.github.io/2017/05/05/angularjs8/
+https://devconcept.github.io/ng-shopping-cart/demo
 
