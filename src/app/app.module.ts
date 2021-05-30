@@ -18,7 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
-// import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { ImageGalleryComponent } from './components/image-gallery/image-gallery.
     TopBarComponent,
     CheckOutPageComponent,
     AboutPageComponent,
-    ImageGalleryComponent
+    // ImageGalleryComponent
   ],
   imports: [
     BrowserModule,
